@@ -37,6 +37,6 @@ int main() {
     std::cin>>d;
     std::cin>>e;
     e=c&(f ^ d)|~e;
-    std::cout<< std::showbase<< std::hex<< e;
+    std::cout<< std::showbase<<std::setfill('0')<<std::internal<<std::setw(6)<< std::hex<< e;
     return 0;
 }
